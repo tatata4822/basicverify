@@ -15,7 +15,7 @@ const shortcode = (n) => {
 const client = new Discord.Client()
 
 client.on('ready', () => {
-    client.user.setActivity(config.playing)
+    client.user.setActivity(config.playing , { type: 'LISTENING' })
     console.log(`[VERIFYBOT] Connected as ${client.user.username}#${client.user.discriminator} ${client.user.id}`)
 })
 
